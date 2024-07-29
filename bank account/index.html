@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Account App</h1>
+        <p>Balance: $<span id="balance">0.00</span></p>
+
+        <div>
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+        <br>
+
+        <div>
+            <input type="number" id="setAsideAmount" placeholder="Amount to set aside">
+            <input type="text" id="purpose" placeholder="Purpose">
+            <button onclick="setAside()">Set Aside</button>
+        </div>
+        <br>
+
+        <div>
+            <input type="number" id="setAsidePercentage" placeholder="Percentage to set aside">
+            <input type="text" id="purposePercentage" placeholder="Purpose">
+            <button onclick="setAsidePercentage()">Set Aside Percentage</button>
+        </div>
+      
+
+        <ul id="setAsideList"></ul>
+
+        <p id="message" class="hidden"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
